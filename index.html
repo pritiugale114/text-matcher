@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,17 +27,19 @@
             flex-direction: row;
             margin: 60px;
         }
-        .result{
+
+        .result {
             text-align: center;
             background-color: rgb(255, 251, 251);
             height: 40px;
             width: 200px;
             margin: 50px auto;
-            font-size:20px;
-            padding-TOP:20PX;
+            font-size: 20px;
+            padding-TOP: 20PX;
         }
     </style>
 </head>
+
 <body>
     <div class="body-container">
         <h1 class="heading"> TEXT MATCHER</h1>
@@ -45,5 +48,24 @@
         <p class="result" id="match-result"></p><br><br>
 
     </div>
+    <script>
+        function comparetext() {
+            const input1element = document.getElementById("input1")
+            const input2element = document.getElementById("input2")
+            const resultelement = document.getElementById("match-result")
+
+            if (input1element.value == input2element.value) {
+                resultelement.innerText = "TEXT MATCHED !!"
+                resultelement.style.color = "GREEN"
+            }
+            else {
+                resultelement.innerText = " NOT MATCHED !!"
+                resultelement.style.color = "RED"
+            }
+
+        }
+
+    </script>
 </body>
+
 </html>
