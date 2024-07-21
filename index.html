@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>text matcher</title>
+    <style>
+        .body-container {
+            height: 500px;
+            width: 400px;
+            margin: 50px auto;
+            border: 2px solid black;
+            background-color: rgb(241, 222, 232);
+        }
+
+        .heading {
+            font-size: 25px;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .input-box {
+            height: 30px;
+            width: 300px;
+            display: flex;
+            flex-direction: row;
+            margin: 60px;
+        }
+        .result{
+            text-align: center;
+            background-color: rgb(255, 251, 251);
+            height: 40px;
+            width: 200px;
+            margin: 50px auto;
+            font-size:20px;
+            padding-TOP:20PX;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="body-container">
+        <h1 class="heading"> TEXT MATCHER</h1>
+        <input type="text" class="input-box" id="input1" onkeyup="comparetext()">
+        <input type="text" class="input-box" id="input2" onkeyup="comparetext()">
+        <p class="result" id="match-result"></p><br><br>
+
+    </div>
 </body>
 </html>
